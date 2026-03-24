@@ -179,7 +179,8 @@ export function Hero({ lenis }: HeroProps) {
               )}
               <a
                 href="/resume.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 data-testid="download-resume"
                 onError={() => setResumeUnavailable(true)}
                 className="flex items-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-sm font-semibold text-white/80 transition-all hover:border-white/40 hover:text-white hover:bg-white/5"
